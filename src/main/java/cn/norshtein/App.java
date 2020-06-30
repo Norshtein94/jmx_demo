@@ -16,6 +16,7 @@ public class App {
         ObjectName mxbeanName = new ObjectName("cn.norshtein.mxbean:type=Machine");
         Machine mxbean = new Machine();
         mbs.registerMBean(mxbean, mxbeanName);
+        // 可使用JConsole连接，选择mBean，查看
         System.in.read();
     }
 }
